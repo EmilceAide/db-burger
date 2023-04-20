@@ -8,14 +8,14 @@ module.exports = (database) => {
             autoIncrement: true
         }, 
         client: {
-            type: DataTypes.TEXT
+            type: DataTypes.STRING
         },
         status:{
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: false
         },
         dateEntry:{
-            type: DataTypes.DATEONLY
+            type: DataTypes.DATE
         }
     })
 }
