@@ -14,6 +14,7 @@ module.exports = (database) => {
         },
         role:{
             type: DataTypes.ENUM(ROLES.ADMIN, ROLES.WAITER, ROLES.CHEF),
+            defaultValue: ROLES.WAITER,
             allowNull: false
         },
     })
