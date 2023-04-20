@@ -8,7 +8,7 @@ module.exports = (database) => {
             autoIncrement: true
         }, 
         name: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: false
         },
         price: {
@@ -19,10 +19,10 @@ module.exports = (database) => {
             type: DataTypes.TEXT
         },
         type: {
-            type: DataTypes.TEXT
+            type: DataTypes.STRING
         },
         dateEntry:{
-            type: DataTypes.DATEONLY
+            type: DataTypes.DATE
         }
     })
 }

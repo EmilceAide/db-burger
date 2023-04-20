@@ -1,4 +1,5 @@
 const { DataTypes } = require('sequelize');
+const { ROLES } = require('./roles')
 
 module.exports = (database) => {
     database.define('User', {
@@ -8,11 +9,11 @@ module.exports = (database) => {
             autoIncrement: true
         }, 
         email: {
-            type: DataTypes.TEXT,
+            type: DataTypes.STRING,
             allowNull: false
         },
         role:{
-            type: DataTypes.TEXT,
+            type: DataTypes.ENUM(ROLES.ADMIN, ROLES.WAITER, ROLES.CHEF),
             allowNull: false
         },
     })
