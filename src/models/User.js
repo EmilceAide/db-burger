@@ -10,6 +10,10 @@ module.exports = (database) => {
         email: {
             type: DataTypes.TEXT,
             allowNull: false
-        }
+        },
+        role:{
+            type: DataTypes.TEXT,
+            allowNull: false
+        },
     })
 }
